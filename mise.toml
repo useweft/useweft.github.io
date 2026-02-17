@@ -1,0 +1,5 @@
+[tools]
+bun = "1"
+
+[tasks.uglify]
+run = "bunx terser client/useweft-0.1.0.js -c -m -o client/latest.js"
