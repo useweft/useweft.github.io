@@ -105,7 +105,7 @@
         <div
           class="inline-block font-mono text-[0.72rem] tracking-widest uppercase text-[#d4622b] bg-[#f4d5c0] px-4 py-1.5 rounded-full mb-8"
         >
-          Public beta · Free forever for open source
+          Public beta · Free for open source
         </div>
 
         <h1
@@ -156,7 +156,7 @@
             <div
               class="font-mono text-3xl font-medium text-[#1a1a1a] tracking-tight"
             >
-              ~8ms
+              &lt;10ms
             </div>
             <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
               compilation
@@ -169,7 +169,7 @@
               ~2kb
             </div>
             <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
-              client script
+              client script (~1kb gzip'd)
             </div>
           </div>
           <div class="text-center">
@@ -393,7 +393,7 @@
           Add one line. Start building.
         </h2>
         <p class="text-[#6b6b6b] mb-8">
-          Free during beta. Generous free tier forever. Open-source client.
+          Free during beta. Generous free tier. Open-source client.
         </p>
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -436,6 +436,47 @@
         >
       </div>
     </footer>
+
+    <!-- ── API Reference ── -->
+    <section class="py-16 bg-[#f9f9f7] border-t border-[#e5e3de]">
+      <div class="max-w-[800px] mx-auto px-8">
+        <div
+          class="font-mono text-[0.72rem] tracking-widest uppercase text-[#a0a0a0] mb-3"
+        >
+          API Reference
+        </div>
+        <h2
+          class="font-serif font-normal text-4xl tracking-tight leading-tight mb-8"
+        >
+          Client API v0.2.0
+        </h2>
+        <p class="text-[#6b6b6b] mb-6">
+          The <code class="font-mono text-sm bg-black/[0.04] px-1.5 py-0.5 rounded">useweft</code> object provides methods to interact with the client script for dynamic updates and optimization.
+        </p>
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
+            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.rehash()</code></h3>
+            <p class="text-sm text-[#6b6b6b] leading-relaxed">Rescans the DOM for new Tailwind classes and recompiles CSS if needed. Useful after dynamic content changes.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
+            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.preload(classes)</code></h3>
+            <p class="text-sm text-[#6b6b6b] leading-relaxed">Pre-warms the cache for upcoming classes. Accepts an array of class strings.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
+            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.observe(opts?)</code></h3>
+            <p class="text-sm text-[#6b6b6b] leading-relaxed">Enables automatic rehashing on DOM mutations. Returns a disconnect function. Optional debounce config.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
+            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.status()</code></h3>
+            <p class="text-sm text-[#6b6b6b] leading-relaxed">Returns current state: <code class="font-mono text-xs">{ bundleId, version, ready }</code>.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
+            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.version</code></h3>
+            <p class="text-sm text-[#6b6b6b] leading-relaxed">String property indicating the client version, e.g., "0.2.0".</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- 100% privacy-first analytics -->
     <script

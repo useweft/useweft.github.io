@@ -5,7 +5,10 @@ bun = "1"
 run = "bunx prettier . --write"
 
 [tasks.uglify]
-run = "bunx terser client/useweft-0.1.0.js -c -m -o client/latest.js"
+run = [
+    "bunx terser client/useweft-0.2.0.js -c -m -o client/latest.js",
+    "gzip --keep --force client/latest.js > client/latest.js.gz"
+]
 
 [tasks.deploy]
 depends = ["uglify"]
