@@ -39,60 +39,60 @@
         font-family: "DM Sans", system-ui, sans-serif;
       }
       .syn-tag {
-        color: #e06c75;
+        color: #a5b4fc;
       }
       .syn-attr {
-        color: #d19a66;
+        color: #c7d2fe;
       }
       .syn-str {
-        color: #98c379;
+        color: #e0e7ff;
       }
       .syn-cls {
-        color: #61afef;
+        color: #c7d2fe;
       }
       .syn-cmt {
-        color: rgba(255, 255, 255, 0.2);
+        color: rgba(165, 180, 252, 0.5);
         font-style: italic;
       }
     </style>
   </head>
 
   <body
-    class="font-sans text-[#1a1a1a] bg-[#fafaf8] antialiased overflow-x-hidden leading-relaxed"
+    class="font-sans text-neutral-900 bg-white antialiased overflow-x-hidden leading-relaxed"
   >
     <!-- ── Header ── -->
     <header
-      class="sticky top-0 z-50 border-b border-[#e5e3de] bg-[#fafaf8]/90 backdrop-blur-sm"
+      class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur-sm"
     >
       <div
         class="max-w-[1000px] mx-auto px-8 py-4 flex items-center justify-between"
       >
         <a
           href="/"
-          class="font-serif italic text-2xl tracking-tight no-underline text-[#1a1a1a]"
+          class="font-serif italic text-2xl tracking-tight no-underline text-neutral-900"
         >
-          use<span class="text-[#d4622b]">W</span>eft
+          use<span class="font-bold not-italic">W</span>eft
         </a>
         <nav class="flex items-center gap-8">
           <a
             href="#how-it-works"
-            class="hidden sm:inline text-sm text-[#6b6b6b] no-underline tracking-wide hover:text-[#1a1a1a] transition-colors"
+            class="hidden sm:inline text-sm text-neutral-500 no-underline tracking-wide hover:text-neutral-900 transition-colors"
             >How it works</a
           >
           <a
             href="#why"
-            class="hidden sm:inline text-sm text-[#6b6b6b] no-underline tracking-wide hover:text-[#1a1a1a] transition-colors"
+            class="hidden sm:inline text-sm text-neutral-500 no-underline tracking-wide hover:text-neutral-900 transition-colors"
             >Why useWeft?</a
           >
           <a
             href="https://github.com/useweft/useweft.github.io"
             target="_blank"
-            class="text-sm text-[#6b6b6b] no-underline tracking-wide hover:text-[#1a1a1a] transition-colors"
+            class="text-sm text-neutral-500 no-underline tracking-wide hover:text-neutral-900 transition-colors"
             >GitHub</a
           >
           <a
             href="#get-started"
-            class="inline-flex items-center gap-1.5 bg-[#1a1a1a] text-[#fafaf8] font-mono text-xs px-5 py-2.5 rounded-md no-underline tracking-wide hover:-translate-y-px hover:shadow-lg transition-all"
+            class="inline-flex items-center gap-1.5 bg-black text-white font-mono text-xs px-5 py-2.5 rounded-md no-underline tracking-wide hover:-translate-y-px hover:shadow-lg transition-all"
             >Get started</a
           >
         </nav>
@@ -103,20 +103,21 @@
     <section class="py-24 text-center">
       <div class="max-w-[800px] mx-auto px-8">
         <div
-          class="inline-block font-mono text-[0.72rem] tracking-widest uppercase text-[#d4622b] bg-[#f4d5c0] px-4 py-1.5 rounded-full mb-8"
+          class="inline-block font-mono text-[0.72rem] tracking-widest uppercase text-black bg-neutral-100 px-4 py-1.5 rounded-full mb-8"
         >
-          Public beta · Free for open source
+          Public beta · Free to use
+          <p class="text-xs text-indigo-500">&lt; 500 classes</p>
         </div>
 
         <h1
           class="font-serif font-normal text-5xl sm:text-6xl lg:text-7xl leading-none tracking-tight max-w-[700px] mx-auto"
         >
           Tailwind CSS,<br />
-          <em class="italic text-[#d4622b]">without the build step</em>
+          <strong class="font-bold">without the build step</strong>
         </h1>
 
         <p
-          class="mt-6 text-lg text-[#6b6b6b] max-w-[520px] mx-auto leading-relaxed"
+          class="mt-6 text-lg text-neutral-500 max-w-[520px] mx-auto leading-relaxed"
         >
           One script tag. Your classes are compiled on the edge, cached
           globally, and served in under 50ms. No npm. No config. No maintenance.
@@ -124,7 +125,7 @@
 
         <!-- Code block -->
         <div
-          class="mt-12 mx-auto max-w-[620px] bg-[#1a1a1a] rounded-xl overflow-hidden shadow-2xl text-left"
+          class="mt-12 mx-auto max-w-[620px] bg-neutral-900 rounded-xl overflow-hidden shadow-2xl text-left"
         >
           <div
             class="flex items-center gap-2 px-5 py-3 border-b border-white/[0.06]"
@@ -132,12 +133,12 @@
             <div class="w-2.5 h-2.5 rounded-full bg-white/10"></div>
             <div class="w-2.5 h-2.5 rounded-full bg-white/10"></div>
             <div class="w-2.5 h-2.5 rounded-full bg-white/10"></div>
-            <span class="font-mono text-[0.72rem] text-white/30 ml-2"
+            <span class="font-mono text-[0.72rem] text-white/80 ml-2"
               >index.html</span
             >
           </div>
           <pre
-            class="px-6 py-5 font-mono text-[0.82rem] leading-relaxed text-white/50 overflow-x-auto"
+            class="px-6 py-5 font-mono text-[0.82rem] leading-relaxed text-indigo-300 overflow-x-auto"
           ><code><span class="syn-cmt">&lt;!-- This is the entire setup. --&gt;</span>
 <span class="syn-tag">&lt;script</span> <span class="syn-attr">src</span>=<span class="syn-str">"https://useweft.dev/client/latest.js"</span><span class="syn-tag">&gt;&lt;/script&gt;</span>
 
@@ -154,41 +155,41 @@
         <div class="flex flex-wrap justify-center gap-12 pt-12 mt-8">
           <div class="text-center">
             <div
-              class="font-mono text-3xl font-medium text-[#1a1a1a] tracking-tight"
+              class="font-mono text-3xl font-medium text-neutral-900 tracking-tight"
             >
               &lt;10ms
             </div>
-            <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
+            <div class="text-xs text-neutral-400 mt-1 tracking-wide">
               compilation
             </div>
           </div>
           <div class="text-center">
             <div
-              class="font-mono text-3xl font-medium text-[#1a1a1a] tracking-tight"
+              class="font-mono text-3xl font-medium text-neutral-900 tracking-tight"
             >
               ~2kb
             </div>
-            <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
+            <div class="text-xs text-neutral-400 mt-1 tracking-wide">
               client script (~1kb gzip'd)
             </div>
           </div>
           <div class="text-center">
             <div
-              class="font-mono text-3xl font-medium text-[#1a1a1a] tracking-tight"
+              class="font-mono text-3xl font-medium text-neutral-900 tracking-tight"
             >
               0
             </div>
-            <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
+            <div class="text-xs text-neutral-400 mt-1 tracking-wide">
               dependencies
             </div>
           </div>
           <div class="text-center">
             <div
-              class="font-mono text-3xl font-medium text-[#1a1a1a] tracking-tight"
+              class="font-mono text-3xl font-medium text-neutral-900 tracking-tight"
             >
               97%+
             </div>
-            <div class="text-xs text-[#a0a0a0] mt-1 tracking-wide">
+            <div class="text-xs text-neutral-400 mt-1 tracking-wide">
               cache hit rate
             </div>
           </div>
@@ -196,13 +197,13 @@
       </div>
     </section>
 
-    <hr class="border-t border-[#e5e3de]" />
+    <hr class="border-t border-neutral-200" />
 
     <!-- ── How it works ── -->
     <section class="py-16" id="how-it-works">
       <div class="max-w-[800px] mx-auto px-8">
         <div
-          class="font-mono text-[0.72rem] tracking-widest uppercase text-[#a0a0a0] mb-3"
+          class="font-mono text-[0.72rem] tracking-widest uppercase text-neutral-400 mb-3"
         >
           How it works
         </div>
@@ -213,19 +214,19 @@
         </h2>
 
         <div
-          class="border border-[#e5e3de] rounded-xl overflow-hidden divide-y divide-[#e5e3de]"
+          class="border border-neutral-200 rounded-xl overflow-hidden divide-y divide-neutral-200"
         >
           <div
             class="bg-white p-7 grid grid-cols-[2.4rem_1fr] gap-5 items-start"
           >
             <div
-              class="font-mono text-sm text-[#d4622b] bg-[#f4d5c0] w-9 h-9 flex items-center justify-center rounded-md"
+              class="font-mono text-sm text-indigo-500 font-bold bg-neutral-100 w-9 h-9 flex items-center justify-center rounded-md"
             >
               1
             </div>
             <div>
               <h3 class="font-semibold text-[0.95rem] mb-1">Scan</h3>
-              <p class="text-sm text-[#6b6b6b] leading-relaxed">
+              <p class="text-sm text-neutral-500 leading-relaxed">
                 The client script (2kb) scans your HTML for Tailwind classes and
                 computes a SHA-256 hash. Same classes always produce the same
                 hash — this is the key insight.
@@ -237,13 +238,13 @@
             class="bg-white p-7 grid grid-cols-[2.4rem_1fr] gap-5 items-start"
           >
             <div
-              class="font-mono text-sm text-[#d4622b] bg-[#f4d5c0] w-9 h-9 flex items-center justify-center rounded-md"
+              class="font-mono text-sm text-indigo-500 font-bold bg-neutral-100 w-9 h-9 flex items-center justify-center rounded-md"
             >
               2
             </div>
             <div>
               <h3 class="font-semibold text-[0.95rem] mb-1">Compile (once)</h3>
-              <p class="text-sm text-[#6b6b6b] leading-relaxed">
+              <p class="text-sm text-neutral-500 leading-relaxed">
                 On first visit, the classes are sent to a Cloudflare Worker
                 running the real Tailwind v4 engine. Compilation takes ~8ms. The
                 resulting CSS is cached globally on the edge.
@@ -255,13 +256,13 @@
             class="bg-white p-7 grid grid-cols-[2.4rem_1fr] gap-5 items-start"
           >
             <div
-              class="font-mono text-sm text-[#d4622b] bg-[#f4d5c0] w-9 h-9 flex items-center justify-center rounded-md"
+              class="font-mono text-sm text-indigo-500 font-bold bg-neutral-100 w-9 h-9 flex items-center justify-center rounded-md"
             >
               3
             </div>
             <div>
               <h3 class="font-semibold text-[0.95rem] mb-1">Cache (forever)</h3>
-              <p class="text-sm text-[#6b6b6b] leading-relaxed">
+              <p class="text-sm text-neutral-500 leading-relaxed">
                 On every subsequent visit — by anyone, anywhere — the CSS is
                 served from edge cache or the browser's HTTP cache. Zero
                 compilation. Zero round-trips. Instant.
@@ -272,13 +273,13 @@
       </div>
     </section>
 
-    <hr class="border-t border-[#e5e3de]" />
+    <hr class="border-t border-neutral-200" />
 
     <!-- ── Why useWeft ── -->
     <section class="py-16" id="why">
       <div class="max-w-[800px] mx-auto px-8">
         <div
-          class="font-mono text-[0.72rem] tracking-widest uppercase text-[#a0a0a0] mb-3"
+          class="font-mono text-[0.72rem] tracking-widest uppercase text-neutral-400 mb-3"
         >
           Why useWeft?
         </div>
@@ -289,19 +290,19 @@
         </h2>
 
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 border border-[#e5e3de] rounded-xl overflow-hidden divide-y sm:divide-y-0 sm:divide-x divide-[#e5e3de]"
+          class="grid grid-cols-1 sm:grid-cols-2 border border-neutral-200 rounded-xl overflow-hidden divide-y sm:divide-y-0 sm:divide-x divide-neutral-200"
         >
           <!-- row 1 -->
-          <div class="bg-white p-7 sm:border-b sm:border-[#e5e3de]">
+          <div class="bg-white p-7 sm:border-b sm:border-neutral-200">
             <h3 class="font-semibold text-[0.92rem] mb-2">Production-ready</h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">
+            <p class="text-sm text-neutral-500 leading-relaxed">
               Unlike the Tailwind Play CDN, useWeft is designed for production.
               No FOUC. No client-side CPU cost. Proper cache headers.
             </p>
           </div>
-          <div class="bg-white p-7 sm:border-b sm:border-[#e5e3de]">
+          <div class="bg-white p-7 sm:border-b sm:border-neutral-200">
             <h3 class="font-semibold text-[0.92rem] mb-2">Network effects</h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">
+            <p class="text-sm text-neutral-500 leading-relaxed">
               Every user warms the cache for everyone else.
               <code
                 class="font-mono text-xs bg-black/[0.04] px-1.5 py-0.5 rounded"
@@ -316,14 +317,14 @@
             <h3 class="font-semibold text-[0.92rem] mb-2">
               Framework agnostic
             </h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">
+            <p class="text-sm text-neutral-500 leading-relaxed">
               Works with HTMX, Alpine.js, Livewire, Django templates, Go/templ,
               Rails ERB, plain HTML — anything that renders markup.
             </p>
           </div>
           <div class="bg-white p-7">
             <h3 class="font-semibold text-[0.92rem] mb-2">Easy to leave</h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">
+            <p class="text-sm text-neutral-500 leading-relaxed">
               Your Tailwind classes are standard. When you outgrow useWeft,
               switch to a build step — your HTML doesn't change. Zero lock-in.
             </p>
@@ -332,13 +333,13 @@
       </div>
     </section>
 
-    <hr class="border-t border-[#e5e3de]" />
+    <hr class="border-t border-neutral-200" />
 
     <!-- ── Built for ── -->
     <section class="py-16">
       <div class="max-w-[800px] mx-auto px-8">
         <div
-          class="font-mono text-[0.72rem] tracking-widest uppercase text-[#a0a0a0] mb-3"
+          class="font-mono text-[0.72rem] tracking-widest uppercase text-neutral-400 mb-3"
         >
           Built for
         </div>
@@ -349,42 +350,40 @@
         </h2>
 
         <div class="columns-1 sm:columns-2 gap-x-10">
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> HTMX and Alpine.js
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> HTMX and Alpine.js
             projects
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Server-rendered apps
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Server-rendered apps
             (Django, Rails, Laravel, Go)
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> WordPress and CMS
-            sites
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> WordPress and CMS sites
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Prototypes that
-            become production
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Prototypes that become
+            production
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Internal tools and
-            admin panels
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Internal tools and admin
+            panels
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Static sites without
-            a build step
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Static sites without a
+            build step
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Email template
-            builders
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Email template builders
           </p>
-          <p class="py-1.5 text-[0.92rem] text-[#6b6b6b] break-inside-avoid">
-            <span class="font-mono text-[#d4622b]">→</span> Documentation sites
+          <p class="py-1.5 text-[0.92rem] text-neutral-500 break-inside-avoid">
+            <span class="font-mono text-black">→</span> Documentation sites
           </p>
         </div>
       </div>
     </section>
 
-    <hr class="border-t border-[#e5e3de]" />
+    <hr class="border-t border-neutral-200" />
 
     <!-- ── CTA ── -->
     <section class="py-20 text-center" id="get-started">
@@ -392,21 +391,21 @@
         <h2 class="font-serif font-normal text-4xl tracking-tight mb-4">
           Add one line. Start building.
         </h2>
-        <p class="text-[#6b6b6b] mb-8">
-          Free during beta. Generous free tier. Open-source client.
+        <p class="text-neutral-500 mb-8">
+          Generous free tier always. Open-source client SDK.
         </p>
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
             href="https://github.com/useweft/useweft.github.io"
-            class="inline-flex items-center gap-1.5 bg-[#1a1a1a] text-[#fafaf8] font-mono text-xs px-5 py-2.5 rounded-md no-underline tracking-wide hover:-translate-y-px hover:shadow-lg transition-all"
+            class="inline-flex items-center gap-1.5 bg-black text-white font-mono text-xs px-5 py-2.5 rounded-md no-underline tracking-wide hover:-translate-y-px hover:shadow-lg transition-all"
           >
             View on GitHub →
           </a>
           <a
             href="#how-it-works"
-            class="font-mono text-xs text-[#6b6b6b] no-underline px-5 py-2.5 border border-[#e5e3de] rounded-md hover:border-[#6b6b6b] hover:text-[#1a1a1a] transition-all"
+            class="font-mono text-xs text-neutral-500 no-underline px-5 py-2.5 border border-neutral-200 rounded-md hover:border-neutral-500 hover:text-neutral-900 transition-all"
           >
             Read the docs
           </a>
@@ -416,32 +415,32 @@
 
     <!-- ── Footer ── -->
     <footer
-      class="border-t border-[#e5e3de] py-8 text-center text-xs text-[#a0a0a0]"
+      class="border-t border-neutral-200 py-8 text-center text-xs text-neutral-400"
     >
       <div class="max-w-[800px] mx-auto px-8">
         useWeft's client is open source. Built by
         <a
           href="https://github.com/roobie"
-          class="text-[#6b6b6b] no-underline hover:text-[#1a1a1a]"
+          class="text-neutral-500 no-underline hover:text-neutral-900"
           >Roobie</a
         >. Uses
         <a
           href="https://tailwindcss.com"
-          class="text-[#6b6b6b] no-underline hover:text-[#1a1a1a]"
+          class="text-neutral-500 no-underline hover:text-neutral-900"
           >Tailwind CSS</a
         >
         v4 under the hood.
-        <span class="block mt-1 text-[#c0c0c0]"
+        <span class="block mt-1 text-neutral-300"
           >This page is styled with Tailwind via useWeft. View source.</span
         >
       </div>
     </footer>
 
     <!-- ── API Reference ── -->
-    <section class="py-16 bg-[#f9f9f7] border-t border-[#e5e3de]">
+    <section class="py-16 bg-neutral-50 border-t border-neutral-200">
       <div class="max-w-[800px] mx-auto px-8">
         <div
-          class="font-mono text-[0.72rem] tracking-widest uppercase text-[#a0a0a0] mb-3"
+          class="font-mono text-[0.72rem] tracking-widest uppercase text-neutral-400 mb-3"
         >
           API Reference
         </div>
@@ -450,29 +449,69 @@
         >
           Client API v0.2.0
         </h2>
-        <p class="text-[#6b6b6b] mb-6">
-          The <code class="font-mono text-sm bg-black/[0.04] px-1.5 py-0.5 rounded">useweft</code> object provides methods to interact with the client script for dynamic updates and optimization.
+        <p class="text-neutral-500 mb-6">
+          The
+          <code class="font-mono text-sm bg-black/[0.04] px-1.5 py-0.5 rounded"
+            >useweft</code
+          >
+          object provides methods to interact with the client script for dynamic
+          updates and optimization.
         </p>
         <div class="space-y-6">
-          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
-            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.rehash()</code></h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">Rescans the DOM for new Tailwind classes and recompiles CSS if needed. Useful after dynamic content changes.</p>
+          <div
+            class="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm"
+          >
+            <h3 class="font-semibold text-lg mb-2">
+              <code class="font-mono text-black">useweft.rehash()</code>
+            </h3>
+            <p class="text-sm text-neutral-500 leading-relaxed">
+              Rescans the DOM for new Tailwind classes and recompiles CSS if
+              needed. Useful after dynamic content changes.
+            </p>
           </div>
-          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
-            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.preload(classes)</code></h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">Pre-warms the cache for upcoming classes. Accepts an array of class strings.</p>
+          <div
+            class="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm"
+          >
+            <h3 class="font-semibold text-lg mb-2">
+              <code class="font-mono text-black">useweft.preload(classes)</code>
+            </h3>
+            <p class="text-sm text-neutral-500 leading-relaxed">
+              Pre-warms the cache for upcoming classes. Accepts an array of
+              class strings.
+            </p>
           </div>
-          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
-            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.observe(opts?)</code></h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">Enables automatic rehashing on DOM mutations. Returns a disconnect function. Optional debounce config.</p>
+          <div
+            class="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm"
+          >
+            <h3 class="font-semibold text-lg mb-2">
+              <code class="font-mono text-black">useweft.observe(opts?)</code>
+            </h3>
+            <p class="text-sm text-neutral-500 leading-relaxed">
+              Enables automatic rehashing on DOM mutations. Returns a disconnect
+              function. Optional debounce config.
+            </p>
           </div>
-          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
-            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.status()</code></h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">Returns current state: <code class="font-mono text-xs">{ bundleId, version, ready }</code>.</p>
+          <div
+            class="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm"
+          >
+            <h3 class="font-semibold text-lg mb-2">
+              <code class="font-mono text-black">useweft.status()</code>
+            </h3>
+            <p class="text-sm text-neutral-500 leading-relaxed">
+              Returns current state:
+              <code class="font-mono text-xs">{ bundleId, version, ready }</code
+              >.
+            </p>
           </div>
-          <div class="bg-white p-6 rounded-lg border border-[#e5e3de] shadow-sm">
-            <h3 class="font-semibold text-lg mb-2"><code class="font-mono text-[#d4622b]">useweft.version</code></h3>
-            <p class="text-sm text-[#6b6b6b] leading-relaxed">String property indicating the client version, e.g., "0.2.0".</p>
+          <div
+            class="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm"
+          >
+            <h3 class="font-semibold text-lg mb-2">
+              <code class="font-mono text-black">useweft.version</code>
+            </h3>
+            <p class="text-sm text-neutral-500 leading-relaxed">
+              String property indicating the client version, e.g., "0.2.0".
+            </p>
           </div>
         </div>
       </div>
